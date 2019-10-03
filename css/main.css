@@ -106,7 +106,7 @@ code {
   margin-top: 1rem;
   background-color: #0d19a3;
   padding: 1rem;
-  font-family: 'Lobster', cursive;
+  font-family: 'Yeseva One', cursive;
 }
 
 .highlight {
@@ -114,7 +114,7 @@ code {
   margin-top: 1rem;
   background-color: #0d19a3;
   padding: 1rem;
-  font-family: 'Lobster', cursive;
+  font-family: 'Yeseva One', cursive;
 }
 
 .second {
@@ -122,7 +122,7 @@ code {
   margin-top: 1rem;
   background-color: #0d19a3;
   padding: 1rem;
-  font-family: 'Lobster', cursive;
+  font-family: 'Yeseva One', cursive;
 }
 
 .body {
@@ -272,7 +272,7 @@ input[type='radio']:after {
 
 /*headings*/
 h1, h2 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Yeseva One', cursive;
 }
 
 /*paragraphs*/
