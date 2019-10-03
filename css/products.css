@@ -1,0 +1,44 @@
+/* This css sheet is to apply flexbox and other styling to the product listing page */
+
+/*first row*/
+.container {
+  display: flex;
+  text-align: center;
+}
+
+/*second row*/
+.container2 {
+  display: flex;
+  text-align: center;
+}
+
+/*product styling*/
+.product {
+  flex: 1 1 auto;
+}
+
+.product-img {
+  width: 15rem;
+  height: 15rem;
+}
+
+/*make the items display vertically on a smaller screen size*/
+@media screen and (min-width: 20em) {
+  .container{
+    flex-direction: column
+  }
+
+  .container2 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .container{
+    flex-direction: row;
+  }
+
+  .container2 {
+    flex-direction: row;
+  }
+}

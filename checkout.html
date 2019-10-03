@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P01 - DeluxeDice Checkout</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/checkout.css" rel="stylesheet">
+
+    <!-- These two lines import my fonts from google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="title">
+        <img width="85" height="90" src="img/logo-trans.png" title="DeluxedDice Logo" alt="A D20 dice that is gold on a blue background">
+        <h1>P01 - DeluxeDice Checkout</h1>
+      </div> <br><br>
+
+      <!-- This is the navigation for the product listing page -->
+      <section class="navigation">
+        <ul class="navigation">
+          <li><a class="navigation-item" href="index.html">Style Guide</a></li>
+          <li><a class="navigation-item" href="product_listing.html">Product Listing Template</a></li>
+        </ul>
+      </section>
+    </header>
+
+    <section class="container">
+
+      <section class="cart item1">
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td> <figure><img src="img/mermaid.jpg" width="100" height="100" title="DND Dice" alt="DND dice that are purple, blue and green and semi-transparent."><figcaption class="product-info">Mermaid's Delight Dice - $15</figcaption></figure>
+            </td>
+            <td>1</td>
+            <td>$15.00</td>
+          </tr>
+          <tr>
+            <td> <figure><img src="img/pink-blue.jpg" width="100" height="100" title="DND Dice" alt="DND dice that are pink and blue"><figcaption class="product-info">Pixie Dust Dice - $12</figcaption></figure>
+            </td>
+            <td>2</td>
+            <td>$24.00</td>
+          </tr>
+          <tr>
+            <td> <figure><img src="img/purple.jpg" width="100" height="100" title="DND Dice" alt="DND dice that are purple"><figcaption class="product-info">Mage Fire Dice - $12</figcaption></figure>
+            </td>
+            <td>1</td>
+            <td>$12.00</td>
+          </tr>
+          <tr>
+            <td> <figure><img src="img/gold.jpg" width="100" height="100" title="DND Dice" alt="DND dice that are gold"><figcaption class="product-info">Dragon's Treasure Dice - $20</figcaption></figure>
+            </td>
+            <td>1</td>
+            <td>$20.00</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>Total: $71.00</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="checkout">
+        <!--Name-->
+        <label class="input-label" for="payment">First Name:</label>
+        <input class="labelled-input" type="text" id="payment" placeholder="Jane"><br>
+
+        <label class="input-label" for="payment">Last Name:</label>
+        <input class="labelled-input" type="text" id="payment2" placeholder="Doe"><br><br>
+
+        <!--Country-->
+        <label class="input-label">Country:</label>
+        <select name="country">
+          <option value="Canada">Canada</option>
+          <option value="USA">USA</option>
+          <option value="Mexico">Mexico</option>
+        </select> <br>
+
+        <!--Address-->
+        <label class="input-label" for="payment">Address:</label>
+        <input class="labelled-input" type="text" id="payment3" placeholder="123 Example St"><br><br>
+
+        <!--Shipping-->
+        <p>Please select a shipping option:</p>
+        <input class="labelled-radio" type="radio" id="standard" name="example" value="stand"
+         checked>
+         <label class="radio-label" for="standard">Standard</label><br>
+
+         <!--Submit Button-->
+        <input class="labelled-radio" type="radio" id="express" name="example" value="exp">
+        <label class="radio-label" for="express">Express</label><br><br>
+        <a class="button-submit" href="#">Submit</a>
+      </section>
+    </section>
+
+  </body>
+</html>

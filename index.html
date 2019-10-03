@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P01 - DeluxeDice Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- These two lines import my fonts from google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="title">
+        <img width="85" height="90" src="img/logo-trans.png" title="DeluxedDice Logo" alt="A D20 dice that is gold on a blue background">
+        <h1>P01 - DeluxeDice Style Guide</h1>
+      </div> <br><br>
+
+      <!-- This is the navigation for the style sheet -->
+      <ul class="navigation">
+        <li><a class="navigation-item" href="#branding">Branding</a></li>
+        <li><a class="navigation-item" href="#interactive_elements">Interactive Elements</a><li>
+        <li><a class="navigation-item" href="#text_elements">Text Elements</a></li>
+        <li><a class="navigation-item" href="#combined_elements">Combined Elements</a></li>
+        <li><a class="navigation-item" href="product_listing.html">Product Listing Template</a></li>
+        <li><a class="navigation-item" href="checkout.html">Checkout Template</a></li>
+        <li><a class="navigation-item" href="#citations">Citations</a></li>
+
+      </ul>
+    </header>
+
+    <!-- BRANDING -->
+    <section id="branding">
+      <h2>Branding</h2>
+
+      <section class="element">
+        <h3>About</h3>
+        <p>DeluxeDice sells dice and dice accessories for table top role-playing games like Dungeons & Dragons. Our target audience is anyone who plays table top RPG games.</p>
+
+        <h3>Colour Palette</h3>
+        <div id="main-dark"><p>#080F5B</p></div>
+        <div id="main-colour"><p>#0D19A3</p></div>
+        <div id="highlight-colour"><p>#15DB95</p></div>
+        <div id="second-colour"><p>#F4E4C1</p></div>
+        <div id="second-dark"><p>#E4C580</p></div>
+
+        <!-- reference https://www.thesitewizard.com/css/create-coloured-box.shtml -->
+
+        <h3>Fonts</h3>
+        <h2 class="highlight">Header - Lobster</h2>
+        <h2 class="main">Header - Lobster</h2>
+        <h2 class="second">Header - Lobster</h2>
+        <p class="body">Montserrat is the font used for body copy.</p>
+
+        <h3>Potential Logos</h3>
+        <img src="img/logo.png" title="DeluxedDice Logo" alt="A D20 dice that is gold on a blue background">
+        <img src="img/logo2.png" title="DeluxedDice Logo" alt="A D20 dice that is green on a blue background">
+
+      </section>
+    </section>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+
+      <section class="element">
+        <h3>In-text link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.in-text-link</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt; This is an &lt;a class="in-text-link" href="#"&gt;in-text link&lt;/a&gt; example &lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p> This is an <a class="in-text-link" href="https://www.w3schools.com/html/html_links.asp">in-text link</a> example.</p>
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Button</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Nav Button</a>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        <h4>CSS selector:</h4>
+        <p>.button-submit</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button-submit"&gt;Submit&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-submit" href="#">Submit</a>
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.input-label, .labelled-input</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;label class="input-label" for="form-name"&gt;Name:&lt;/label&gt;</code>
+        <code>&lt;input class="labelled-input" type="text" id="form-name" placeholder="Jane Doe"&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <label class="input-label" for="form-name">Name:</label>
+        <input class="labelled-input" type="text" id="form-name" placeholder="Jane Doe">
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+        <h4>CSS selector:</h4>
+        <p>.labelled-radio, .radio-label</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;class="labelled-radio" input type="radio" id="option1" name="example" value="yes" checked&gt;</code>
+        <code>&lt;label for="option1"&gt;Yes&lt;/label&gt;</code>
+
+        <code>&lt;class="labelled-radio" input type="radio" id="option2" name="example" value="no"&gt;</code>
+        <code>&lt;label for="option2"&gt;No&lt;/label&gt;</code>
+
+        <code>&lt;class="labelled-radio" input type="radio" id="option3" name="example" value="maybe"&gt;</code>
+        <code>&lt;label for="option3"&gt;Maybe&lt;/label&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p>Select an option:</p>
+
+        <input class="labelled-radio" type='radio' id="option1" name="example" value="yes"
+         checked>
+        <label class="radio-label" for="option1">Yes</label><br>
+
+        <input class="labelled-radio" type='radio' id="option2" name="example" value="no">
+        <label class="radio-label" for="option2">No</label><br>
+
+        <input class="labelled-radio" type='radio' id="option3" name="example" value="maybe">
+        <label class="radio-label" for="option3">Maybe</label><br>
+        <!-- reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio -->
+      </section>
+
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <h4>CSS selector:</h4>
+        <p>.img-link</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a class="img-link" href="https://www.wizards.com/d20modern/d20mdice/dice.htm"&gt;</code>
+        <code>&lt;img src="img/dice.jpg" title="DND Dice" alt="DND dice that are light green and semi-transparent"&gt;&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="img-link" href="https://www.wizards.com/d20modern/d20mdice/dice.htm">
+        <img src="img/dice.jpg" title="DND Dice" alt="DND dice that are light green and semi-transparent"></a>
+
+        <!-- reference: https://www.rapidtables.com/web/html/link/html-image-link.html -->
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+        <h4>CSS selector:</h4>
+        <p>.heading</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;h2 class="heading"&gt;Heading 2&lt;/h2&gt;</code>
+        <code>&lt;h3 class="heading"&gt;Heading 3&lt;/h3&gt;</code>
+        <code>&lt;h4 class="heading"&gt;Heading 4&lt;/h4&gt;</code>
+        <code>&lt;h5 class="heading"&gt;Heading 5&lt;/h5&gt;</code>
+
+        <h4>Rendered element:</h4>
+
+        <h2 class="heading">Heading 2</h2>
+        <h3 class="heading">Heading 3</h3>
+        <h4 class="heading">Heading 4</h4>
+        <h5 class="heading">Heading 5</h5>
+
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <h4>CSS selector:</h4>
+        <p>p</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;Lorem ipsum...&lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est libero, tincidunt non cursus eget, imperdiet sit amet ante. Aliquam et sodales magna. Nam ac vehicula arcu, maximus gravida ex. Mauris aliquet eget risus a molestie. Suspendisse posuere vehicula velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ornare justo lectus, ac tincidunt metus porttitor vel.</p>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <h4>CSS selector:</h4>
+        <p>ol, li</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;ol&gt;</code>
+        <code>&lt;li&gt;Item one&lt;/p&gt;</code>
+        <code>&lt;li&gt;Item two&lt;/p&gt;</code>
+        <code>&lt;li&gt;Item three&lt;/p&gt;</code>
+        <code>&lt;/ol&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <ol>
+          <li>Item one</li>
+          <li>Item two</li>
+          <li>Item three</li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+        <h4>CSS selector:</h4>
+        <p>.navigation .navigation-item</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;ul class="navigation"&gt;</code>
+        <code>&lt;li&gt;&lt;a class="navigation-item" href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;</code>
+        <code>&lt;li&gt;&lt;a class="navigation-item" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;</code>
+        <code>&lt;li&gt;&lt;a class="navigation-item" href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;</code>
+        <code>&lt;/ul&gt;</code>
+
+
+        <h4>Rendered element:</h4>
+        <ul class="navigation">
+          <li><a class="navigation-item" href="#">Home</a></li>
+          <li><a class="navigation-item" href="#">About</a><li>
+          <li><a class="navigation-item" href="#">Contact</a></li>
+        </ul>
+
+        <!-- while a ul may not be ideal semantially, it allows for the type of styling I wished to achieve -->
+
+      </section>
+
+      <section class="element">
+        <h3>Product Listing</h3>
+        <h4>CSS selector:</h4>
+        <p>.product</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;figure class="product"&gt;</code>
+        <code>&lt;a href="#"&gt; &lt;img class="img-link product-img" src="img/dice.jpg" title="DND Dice" alt="DND dice that are light green and semi-transparent"&gt;&lt;/a&gt;</code>
+        <code>&lt;figcaption class="product-info"&gt;Green Dice - $15&lt;/figcaption&gt;</code>
+        <code>&lt;/figure&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <figure class="product">
+          <a href="#"><img class="img-link product-img" src="img/dice.jpg" title="DND Dice" alt="DND dice that are light green and semi-transparent"></a>
+          <figcaption class="product-info">Green Dice - $15</figcaption>
+        </figure>
+
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+        <h4>CSS selector:</h4>
+        <p>.checkout</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;section class="checkout"&gt;</code>
+        <code>&lt;label class="input-label" for="payment"&gt;Name:&lt;/label&gt;</code>
+        <code>&lt;input class="labelled-input" type="text" id="payment" placeholder="Jane Doe"&gt;</code>
+        <code>&lt;label class="input-label" for="payment"&gt;Address:&lt;/label&gt;</code>
+        <code>&lt;input class="labelled-input" type="text" id="form-name" placeholder="123 Exam[le St"&gt;</code>
+
+        <code>&lt;p&gt;Please select a shipping option:&lt;/p&gt;</code>
+        <code>&lt;input class="labelled-radio" type="radio" id="standard" name="example" value="stand" checked&gt;</code>
+        <code>&lt;label class="radio-label" for="standard"&gt;Standard&lt;/label&gt;</code>
+
+        <code>&lt;input class="labelled-radio" type="radio" id="express" name="example" value="exp"&gt;</code>
+        <code>&lt;label class="radio-label" for="express"&gt;Express&lt;/label&gt;</code>
+        <code>&lt;a class="button-submit" href="#"&gt;Submit&lt;/a&gt;</code>
+        <code>&lt;/section&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <section class="checkout">
+          <label class="input-label" for="payment">Name:</label>
+          <input class="labelled-input" type="text" id="payment" placeholder="Jane Doe"><br>
+          <label class="input-label" for="payment">Address:</label>
+          <input class="labelled-input" type="text" id="payment2" placeholder="123 Example St"><br><br>
+
+          <p>Please select a shipping option:</p>
+          <input class="labelled-radio" type="radio" id="standard" name="example" value="stand"
+           checked>
+           <label class="radio-label" for="standard">Standard</label><br>
+
+          <input class="labelled-radio" type="radio" id="express" name="example" value="exp">
+          <label class="radio-label" for="express">Express</label><br><br>
+          <a class="button-submit" href="#">Submit</a>
+        </section>
+
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+        <h4>CSS selector:</h4>
+        <p>.cart</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;section class="cart"&gt;</code>
+        <code>&lt;table&gt;</code>
+        <code>&lt;tr&gt;</code>
+        <code>&lt;th&gt;Product&lt;/th&gt;</code>
+        <code>&lt;th&gt;Quantity&lt;/th&gt;</code>
+        <code>&lt;th&gt;Price&lt;/th&gt;</code>
+        <code>&lt;/tr&gt;</code>
+        <code>&lt;tr&gt;</code>
+        <code>&lt;td&gt;&lt;figure&gt;&lt;img src="img/mermaid.jpg" title="DND Dice" alt="DND dice that are purple, blue and green and semi-transparent."&gt;&lt;figcaption class="product-info"&gt;Mermaid's Delight Dice - $15&lt;/figcaption&gt;&lt;/figure&gt;</code>
+        <code>&lt;/td&gt;</code>
+        <code>&lt;td&gt;1&lt;/td&gt;</code>
+        <code>&lt;td&gt;$15.00&lt;/td&gt;</code>
+        <code>&lt;/tr&gt;</code>
+        <code>&lt;tr&gt;</code>
+        <code>&lt;td&gt;&lt;figure&gt;&lt;img src="img/pink-blue.jpg" title="DND Dice" alt="DND dice that are pink and blue."&gt;&lt;figcaption class="product-info"&gt;Pixie Dust Dice - $12&lt;/figcaption&gt;&lt;/figure&gt;</code>        <code>&lt;/td&gt;</code>
+        <code>&lt;td&gt;2&lt;/td&gt;</code>
+        <code>&lt;td&gt;$24.00&lt;/td&gt;</code>
+        <code>&lt;/tr&gt;</code>
+        <code>&lt;tr&gt;</code>
+        <code>&lt;td&gt;&lt;figure&gt;&lt;img src="img/purple.jpg" title="DND Dice" alt="DND dice that are purple."&gt;&lt;figcaption class="product-info"&gt;Mage Fire Dice - $12&lt;/figcaption&gt;&lt;/figure&gt;</code>
+        <code>&lt;/td&gt;</code>
+        <code>&lt;td&gt;1&lt;/td&gt;</code>
+        <code>&lt;td&gt;$32.00&lt;/td&gt;</code>
+        <code>&lt;/tr&gt;</code>
+        <code>&lt;tr&gt;</code>
+        <code>&lt;td&gt;&lt;figure&gt;&lt;img src="img/gold.jpg" title="DND Dice" alt="DND dice that are gold."&gt;&lt;figcaption class="product-info"&gt;Dragon's Treasure Dice - $20&lt;/figcaption&gt;&lt;/figure&gt;</code>
+        <code>&lt;/td&gt;</code>
+        <code>&lt;td&gt;1&lt;/td&gt;</code>
+        <code>&lt;td&gt;$20.00&lt;/td&gt;</code>
+        <code>&lt;/tr&gt;</code>
+        <code>&lt;tr&gt;</code>
+        <code>&lt;td&gt;&lt;/td&gt;</code>
+        <code>&lt;td&gt;&lt;/td&gt;</code>
+        <code>&lt;td&gt;Total: $71.00&lt;/td&gt;</code>
+        <code>&lt;/tr&gt;</code>
+        <code>&lt;/table&gt;</code>
+        <code>&lt;/section&gt;</code>
+
+
+        <h4>Rendered element:</h4>
+        <section class="cart">
+          <table>
+            <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Price</th>
+            </tr>
+            <tr>
+              <td> <figure><img src="img/mermaid.jpg" width="100" height="100" title="DND Dice" alt="DND dice that are purple, blue and green and semi-transparent."><figcaption class="product-info">Mermaid's Delight Dice - $15</figcaption></figure>
+              </td>
+              <td>1</td>
+              <td>$15.00</td>
+            </tr>
+            <tr>
+              <td> <figure><img src="img/pink-blue.jpg" width="100" height="100" title="DND Dice" alt="DND dice that are pink and blue"><figcaption class="product-info">Pixie Dust Dice - $12</figcaption></figure>
+              </td>
+              <td>2</td>
+              <td>$24.00</td>
+            </tr>
+            <tr>
+              <td> <figure><img src="img/purple.jpg" width="100" height="100" title="DND Dice" alt="DND dice that are purple"><figcaption class="product-info">Mage Fire Dice - $12</figcaption></figure>
+              </td>
+              <td>1</td>
+              <td>$12.00</td>
+            </tr>
+            <tr>
+              <td> <figure><img src="img/gold.jpg" width="100" height="100" title="DND Dice" alt="DND dice that are gold"><figcaption class="product-info">Dragon's Treasure Dice - $20</figcaption></figure>
+              </td>
+              <td>1</td>
+              <td>$20.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Total: $71.00</td>
+            </tr>
+          </table>
+        </section>
+
+    </section>
+  </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Atlantahammy. Creator. <strong>DND Dice with Heart [Image]</strong>. Retrieved from <a href="http://www.ourclipart.com/clipart/d20%20clipart/#gal_d20-clipart_4674806.jpg">http://www.ourclipart.com/clipart/d20%20clipart/#gal_d20-clipart_4674806.jpg</a></li>
+        <li>Crystal Maggie. Creator. <strong>Opalite Dice [Image]</strong>. Retrieved from <a href="https://www.etsy.com/listing/637021377/opalite-dice-set-dnd-dice-set-stone-dice">https://www.etsy.com/listing/637021377/opalite-dice-set-dnd-dice-set-stone-dice</a></li>
+        <li>Dark Elf Dice. Creator. <strong>Fey Magic Dice [Image]</strong>. Retrieved from <a href="https://darkelfdice.com/products/blended-dice-fey-magic-rpg-role-playing-game-dice-set">https://darkelfdice.com/products/blended-dice-fey-magic-rpg-role-playing-game-dice-set</a></li>
+        <li>Dice Envy. Creator. <strong>Acid Mist Dice [Image]</strong>. Retrieved from <a href="https://diceenvy.com/products/dnd-dice-set-green-and-gold">https://diceenvy.com/products/dnd-dice-set-green-and-gold</a></li>
+        <li>Heng, Christopher. Developer. 2018. <strong>How to Create a Coloured Box in HTML/CSS [Tutorial]</strong>. Retrieved from <a href="https://www.thesitewizard.com/css/create-coloured-box.shtml">https://www.thesitewizard.com/css/create-coloured-box.shtml</a></li>
+        <li>Imparalli Type. Designer. <strong> Lobster [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Lobster">https://fonts.google.com/specimen/Lobster</a></li>
+        <li>Julieta Ulanovsky. Designer. <strong> Montserrat [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Montserrat">https://fonts.google.com/specimen/Montserrat</a></li>
+        <li>Kraken Dice. Creator. <strong> Purple Black Fusion Dice [Image]</strong>. Retrieved from <a href="https://www.krakendice.com/purple-black-fusion-dice-rpg-polyhedral-dice-set-for-dnd/">https://www.krakendice.com/purple-black-fusion-dice-rpg-polyhedral-dice-set-for-dnd/</a><li>
+        <li>Kraken Dice. Creator. <strong>Rainbow Dice [Image]</strong> Retrieved from <a href="https://www.krakendice.com/lucky-charms-rainbow-dice-set/">https://www.krakendice.com/lucky-charms-rainbow-dice-set/</a></li>
+        <li>Kraken Dice. Creator. <strong>Blue Aurora Translucent Dice [Image]</strong>. Retrieved from <a href="https://www.krakendice.com/lucky-charms-rainbow-dice-set/">https://www.krakendice.com/lucky-charms-rainbow-dice-set/</a></li>
+        <li>Mozilla. <strong>Radio Buttons [Tutorial]</strong>. Retrieved from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio</a></li>
+        <li>RapidTables. <strong>HTML Image as Link [Tutorial]</strong>. Retrieved from <a href="https://www.rapidtables.com/web/html/link/html-image-link.html">https://www.rapidtables.com/web/html/link/html-image-link.html</a></li>
+        <li>Stack Overflow. 2011.<strong>How to Change the Color of Radio Buttons [Tutorial]</strong>. Retrieved from <a href="https://stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons">https://stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons</a>.</li>
+        <li>Takuma. <strong>Awesome Input Focus Effects [Tutorial]</strong>.Retrieved from <a href="https://codepen.io/Takumari85/pen/RaYwpJ">https://codepen.io/Takumari85/pen/RaYwpJ</a></li>
+        <li>W3Schools. <strong>HTML Tables [Tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/html/html_tables.asp">https://www.w3schools.com/html/html_tables.asp</a></li>
+        <li>W3Schools. <strong>How To - Image Hover Overlay [Tutorial]</strong>.Retrieved from <a href="https://www.w3schools.com/howto/howto_css_image_overlay.asp">https://www.w3schools.com/howto/howto_css_image_overlay.asp</a></li>
+        <li>W3Schools. <strong>CSS Navigation Bar [Tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/css/css_navbar.asp">https://www.w3schools.com/css/css_navbar.asp</a></li>
+        <li>Your Dices. Creator. <strong> Gold DnD Dice [Image]</strong>. Retrieved from <a href="https://www.yourdices.com/product/gold-dnd-dice-set/">https://www.yourdices.com/product/gold-dnd-dice-set/</a></li>
+      </ul>
+
+    </section>
+
+  </body>
+</html>

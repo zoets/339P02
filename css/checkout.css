@@ -1,0 +1,19 @@
+/* This is the stylesheet for the checkout page to apply flexbox*/
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item1 {
+  flex: 1 1 auto;
+}
+
+.checkout {
+  padding-top: 2em;
+}
+
+.product-info {
+  float: right;
+}

@@ -1,0 +1,347 @@
+/* LOGO AND TITLE -------------------------------------
+*/
+
+.title img {
+  float: left;
+  padding-right: 1em;
+    padding-bottom: 0;
+}
+
+.title h1 {
+  position: relative;
+  padding-top: 1em;
+  padding-bottom: 0;
+}
+
+/*
+  STYLE GUIDE STYLING ----------------------------------
+  Default styling for the style guide
+*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 2rem;
+}
+
+section {
+  padding: 1em;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+.heading {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-style:normal;
+}
+
+h2 {
+  margin-top: 6rem;
+}
+
+h3 {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+p {
+  margin-top: 0;
+  width: 60%;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+/* BRANDING -----------------------------------
+*/
+
+/*colour palette*/
+#main-colour{
+  background-color: #0D19A3;
+  color: #ffffff;
+  width: 80px;
+  padding: 2rem;
+}
+
+#main-dark{
+  background-color: #080F5B;
+  color: #ffffff;
+  width: 80px;
+  padding: 2rem;
+}
+
+#highlight-colour{
+  background-color: #15DB95;
+  width: 80px;
+  padding: 2rem;
+}
+
+#second-colour{
+  background-color: #F4E4C1;
+  width: 80px;
+  padding: 2rem;
+}
+
+#second-dark{
+  background-color: #E4C580;
+  width: 80px;
+  padding: 2rem;
+}
+
+/*fonts*/
+
+.main {
+  color:#ffffff;
+  margin-top: 1rem;
+  background-color: #0d19a3;
+  padding: 1rem;
+  font-family: 'Lobster', cursive;
+}
+
+.highlight {
+  color: #15db95;
+  margin-top: 1rem;
+  background-color: #0d19a3;
+  padding: 1rem;
+  font-family: 'Lobster', cursive;
+}
+
+.second {
+  color: #e4c580;
+  margin-top: 1rem;
+  background-color: #0d19a3;
+  padding: 1rem;
+  font-family: 'Lobster', cursive;
+}
+
+.body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/*in-text link*/
+.in-text-link {
+  color: #0d19a3;
+}
+
+.in-text-link:hover, .in-text-link:focus, .in-text-link:active {
+  color: #080f5b;
+}
+
+/*navigation button*/
+
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: #0d19a3;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #080f5b;
+}
+
+/*submit button*/
+.button-submit {
+  display: inline-block;
+  padding: 0.5rem;
+  color: white;
+  background-color: #15db95;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.button-submit:hover, .button-submit:focus {
+  background-color: #14a371;
+}
+
+/*text input field with label*/
+.labelled-input {
+  font: 16px 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 1px solid #000000;
+  background-color: #fff;
+  transition: 0.4s ease-in-out;
+}
+
+/* reference: https://codepen.io/Takumari85/pen/RaYwpJ */
+
+.labelled-input:focus, .labelled-input:active {
+  outline: none;
+  background-color: #EEE;
+  box-shadow: 0 0 3px #080F5B;
+}
+
+.labelled-input:hover {
+  background-color: #EEE;
+}
+
+.input-label {
+  color:#0d19a3;
+}
+
+/*radio button with label*/
+.radio-label {
+  color:#0d19a3;
+}
+
+/* the css for the radio buttons was taken from a tutorial (link below)*/
+
+input[type='radio']:after {
+      /*create a custom circle for the radio button*/
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      top: -2px;
+      left: -1px;
+      position: relative;
+
+      /*set the default colour of the circle*/
+      background-color: #d1d3d1;
+
+      /*cover up default radio buttons*/
+      content: '';
+      display: inline-block;
+
+      /*adding a white border makes the circle appear to have no border*/
+      border: 2px solid white;
+  }
+
+  input[type='radio']:checked:after {
+      /*create a custom circle for the radio button*/
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      top: -2px;
+      left: -1px;
+      position: relative;
+
+      /*set the colour of the circle when it is checked*/
+      background-color: #e4c580;
+
+      /*cover up default radio buttons*/
+      content: '';
+      display: inline-block;
+
+      /*adding a white border makes the circle appear to have no border*/
+      border: 2px solid white;
+  }
+
+  /* reference: https://stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons */
+
+.radio-label:hover, .radio-label:focus {
+  text-decoration: underline;
+}
+
+/*image as link*/
+.img-link {
+  opacity: 1;
+  transition: .5s ease-in-out;
+}
+
+.img-link:hover, .img-link:focus {
+  opacity:0.5;
+}
+
+/* resource: https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+/*headings*/
+h1, h2 {
+  font-family: 'Lobster', cursive;
+}
+
+/*paragraphs*/
+
+/*numbered lists*/
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+/*main navigation*/
+
+.navigation {
+  list-style-type: none;
+  background-color: #0d19a3;
+  overflow: hidden;
+  padding: 0.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  float: left;
+}
+
+.navigation-item {
+  padding: 0.5em;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation-item:hover {
+    background-color: #080f5b;
+}
+
+/*reference: https://www.w3schools.com/css/css_navbar.asp */
+
+/* product listing css*/
+.product {
+  display: inline-block;
+}
+
+.product-img {
+  vertical-align: top;
+}
+
+.product-info {
+  text-align: center;
+  padding-top: 1em;
+}
+
+/*payment form*/
+
+/* shopping cart css */
+
+table {
+  width: 70%;
+}
+
+tr {
+  padding: 0.5em;
+}
+
+td {
+  padding: 1em;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
