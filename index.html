@@ -68,9 +68,9 @@
         <!-- reference https://www.thesitewizard.com/css/create-coloured-box.shtml -->
 
         <h3>Fonts</h3>
-        <h2 class="main">Header - Lobster</h2>
-        <h2 class="highlight">Header - Lobster</h2>
-        <h2 class="second">Header - Lobster</h2>
+        <h2 class="main">Header - Yeseva One</h2>
+        <h2 class="highlight">Header - Yeseva One</h2>
+        <h2 class="second">Header - Yeseva One</h2>
         <p class="body">Montserrat is the font used for body copy.</p>
 
         <h3>Potential Logos</h3>
@@ -315,8 +315,19 @@
 
         <h4>Sample code:</h4>
         <code>&lt;section class="checkout"&gt;</code>
-        <code>&lt;label class="input-label" for="payment"&gt;Name:&lt;/label&gt;</code>
-        <code>&lt;input class="labelled-input" type="text" id="payment" placeholder="Jane Doe"&gt;</code>
+        <code>&lt;label class="input-label" for="payment"&gt;First Name:&lt;/label&gt;</code>
+        <code>&lt;input class="labelled-input" type="text" id="payment" placeholder="Jane"&gt;</code>
+        <code>&lt;label class="input-label" for="payment"&gt;Last Name:&lt;/label&gt;</code>
+        <code>&lt;input class="labelled-input" type="text" id="payment" placeholder="Doe"&gt;</code>
+
+
+        <code>&lt;label class="input-label"&gt;Country:&lt;/label&gt;</code>
+        <code>&lt;select name="country"&gt;</code>
+        <code>&lt;option value="Canada"&gt;Canada&lt;/option&gt;</code>
+        <code>&lt;option value="USA"&gt;USA&lt;/option&gt;</code>
+        <code>&lt;option value="Mexico"&gt;Mexico&lt;/option&gt;</code>
+        <code>&lt;/select&gt;</code>
+
         <code>&lt;label class="input-label" for="payment"&gt;Address:&lt;/label&gt;</code>
         <code>&lt;input class="labelled-input" type="text" id="form-name" placeholder="123 Exam[le St"&gt;</code>
 
@@ -331,11 +342,25 @@
 
         <h4>Rendered element:</h4>
         <section class="checkout">
-          <label class="input-label" for="payment">Name:</label>
-          <input class="labelled-input" type="text" id="payment" placeholder="Jane Doe"><br>
+          <!--Name-->
+          <label class="input-label" for="payment">First Name:</label>
+          <input class="labelled-input" type="text" id="payment" placeholder="Jane"><br>
+
+          <label class="input-label" for="payment">Last Name:</label>
+          <input class="labelled-input" type="text" id="payment2" placeholder="Doe"><br><br>
+
+          <!--Address-->
+          <label class="input-label">Country:</label>
+          <select name="country">
+            <option value="Canada">Canada</option>
+            <option value="USA">USA</option>
+            <option value="Mexico">Mexico</option>
+          </select> <br>
+
           <label class="input-label" for="payment">Address:</label>
           <input class="labelled-input" type="text" id="payment2" placeholder="123 Example St"><br><br>
 
+          <!--Shipping-->
           <p>Please select a shipping option:</p>
           <input class="labelled-radio" type="radio" id="standard" name="example" value="stand"
            checked>
