@@ -130,7 +130,7 @@ code {
   margin-top: 1rem;
   background-color: #86538C; /* Purple */
   padding: 1rem;
-  font-family: 'Lobster', cursive;
+  font-family: 'Yeseva One', cursive;
 }
 
 .main {
@@ -138,7 +138,7 @@ code {
   margin-top: 1rem;
   background-color: #CCB2D5; /* Lilac */
   padding: 1rem;
-  font-family: 'Lobster', cursive;
+  font-family: 'Yeseva One', cursive;
 }
 
 .second {
@@ -146,7 +146,7 @@ code {
   margin-top: 1rem;
   background-color: #FEB664; /* Orange */
   padding: 1rem;
-  font-family: 'Lobster', cursive;
+  font-family: 'Yeseva One', cursive;
 }
 
 .body {
@@ -333,7 +333,7 @@ input[type='radio']:after {
 
 /*headings*/
 h1, h2 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Yeseva One', cursive;
   color: #FEB664; /* Orange */
 }
 
