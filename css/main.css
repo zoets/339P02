@@ -1,16 +1,31 @@
 /* LOGO AND TITLE -------------------------------------
 */
 
+/*
+  Lilac: #CCB2D5
+  Purple: #86538C
+  Orange: #FEB664
+  Yellow: #F8E392
+  Grey: #7F7F7F
+  */
+header {
+  background: #CCB2D5; /* Lilac */
+}
+
 .title img {
   float: left;
-  padding-right: 1em;
-    padding-bottom: 0;
+  padding-bottom: 0;
+  padding-right: 0.5em;
+  margin: 1em;
 }
 
 .title h1 {
   position: relative;
+  padding: 0;
   padding-top: 1em;
-  padding-bottom: 0;
+  padding-left: 0;
+  margin: 0;
+  color: #86538C; /* Purple */
 }
 
 /*
@@ -18,8 +33,12 @@
   Default styling for the style guide
 */
 body {
+  background-color: white;
   font-family: 'Montserrat', sans-serif;
-  padding: 2rem;
+  padding:0;
+  margin:0;
+  color: #7F7F7F; /* Grey */
+  line-height: 2;
 }
 
 section {
@@ -29,8 +48,8 @@ section {
 .element {
   padding-bottom: 2rem;
   border-top-width: 0.15rem;
-  border-top-style: solid;
-  border-top-color: black;
+  border-top-style: dotted;
+  border-top-color: #7F7F7F; /* Grey */
 }
 
 .heading {
@@ -63,70 +82,80 @@ code {
   display: block;
 }
 
+.td-center{
+  text-align: center;
+}
+
 /* BRANDING -----------------------------------
 */
 
-/*colour palette*/
 #main-colour{
-  background-color: #0D19A3;
-  color: #ffffff;
-  width: 80px;
+  color: #7F7F7F; /* Grey */
   padding: 2rem;
+  display: flex;
 }
 
 #main-dark{
-  background-color: #080F5B;
-  color: #ffffff;
-  width: 80px;
+  color: #7F7F7F; /* Grey */
   padding: 2rem;
+  display: flex;
 }
 
 #highlight-colour{
-  background-color: #15DB95;
-  width: 80px;
+  color: #7F7F7F; /* Grey */
   padding: 2rem;
+  display: flex;
 }
 
 #second-colour{
-  background-color: #F4E4C1;
-  width: 80px;
+  color: #7F7F7F; /* Grey */
   padding: 2rem;
+  display: flex;
 }
 
 #second-dark{
-  background-color: #E4C580;
-  width: 80px;
+  color: #7F7F7F; /* Grey */
   padding: 2rem;
+  display: flex;
+}
+
+.color-img {
+  padding-right:2em;
 }
 
 /*fonts*/
 
-.main {
+.highlight {
   color:#ffffff;
   margin-top: 1rem;
-  background-color: #0d19a3;
+  background-color: #86538C; /* Purple */
   padding: 1rem;
   font-family: 'Lobster', cursive;
 }
 
-.highlight {
-  color: #15db95;
+.main {
+  color: #86538C;  /* Purple */
   margin-top: 1rem;
-  background-color: #0d19a3;
+  background-color: #CCB2D5; /* Lilac */
   padding: 1rem;
   font-family: 'Lobster', cursive;
 }
 
 .second {
-  color: #e4c580;
+  color: #ffffff;
   margin-top: 1rem;
-  background-color: #0d19a3;
+  background-color: #FEB664; /* Orange */
   padding: 1rem;
   font-family: 'Lobster', cursive;
 }
 
 .body {
   font-family: 'Montserrat', sans-serif;
+  color: #7F7F7F; /* Grey */
+}
+
+.logos {
+  max-width: 15%;
 }
 
 
@@ -136,11 +165,12 @@ code {
 
 /*in-text link*/
 .in-text-link {
-  color: #0d19a3;
+  color: #CCB2D5; /* Lilac */
+  text-decoration: none;
 }
 
 .in-text-link:hover, .in-text-link:focus, .in-text-link:active {
-  color: #080f5b;
+  color: #F8E392;  /* Yellow */
 }
 
 /*navigation button*/
@@ -149,14 +179,14 @@ code {
   display: inline-block;
   padding: 0.5rem;
   color: white;
-  background-color: #0d19a3;
+  background-color: #86538C;  /* Purple */
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: #080f5b;
+  background-color: #FEB664; /* Orange */
 }
 
 /*submit button*/
@@ -164,24 +194,38 @@ code {
   display: inline-block;
   padding: 0.5rem;
   color: white;
-  background-color: #15db95;
+  background-color: #FEB664; /* Orange */
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
 
 .button-submit:hover, .button-submit:focus {
-  background-color: #14a371;
+  background-color: #F8E392; /* Yellow */
 }
 
 /*text input field with label*/
 .labelled-input {
   font: 16px 'Montserrat', sans-serif;
+  color:  #7F7F7F; /* Grey */
   box-sizing: border-box;
   border: 0;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #86538C;  /* Purple */
   background-color: #fff;
   transition: 0.4s ease-in-out;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FEB664; /* Orange */
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #FEB664; /* Orange */
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #FEB664; /* Orange */
 }
 
 /* reference: https://codepen.io/Takumari85/pen/RaYwpJ */
@@ -197,12 +241,29 @@ code {
 }
 
 .input-label {
-  color:#0d19a3;
+  color: #86538C;  /* Purple */
+  padding-right: 0.5em;
 }
 
 /*radio button with label*/
 .radio-label {
-  color:#0d19a3;
+  color: #86538C;  /* Purple */
+}
+
+select {
+  font: 16px 'Montserrat', sans-serif;
+  color:  #FEB664; /* Orange */
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 1px solid #86538C;  /* Purple */
+  background-color: #fff;
+  transition: 0.4s ease-in-out;
+}
+
+select:focus, select:active {
+  outline: none;
+  background-color: #EEE;
+  box-shadow: 0 0 3px #080F5B;
 }
 
 /* the css for the radio buttons was taken from a tutorial (link below)*/
@@ -237,7 +298,7 @@ input[type='radio']:after {
       position: relative;
 
       /*set the colour of the circle when it is checked*/
-      background-color: #e4c580;
+      background-color:  #FEB664; /* Orange */
 
       /*cover up default radio buttons*/
       content: '';
@@ -273,6 +334,7 @@ input[type='radio']:after {
 /*headings*/
 h1, h2 {
   font-family: 'Lobster', cursive;
+  color: #FEB664; /* Orange */
 }
 
 /*paragraphs*/
@@ -286,12 +348,12 @@ h1, h2 {
 /*main navigation*/
 
 .navigation {
-  list-style-type: none;
-  background-color: #0d19a3;
-  overflow: hidden;
   padding: 0.5em;
-  margin: 0;
+  background-color: #86538C; /* Purple */
+  list-style-type: none;
+  overflow: hidden;
   padding: 0;
+
 }
 
 .navigation li {
@@ -304,10 +366,12 @@ h1, h2 {
   text-align: center;
   text-decoration: none;
   color: white;
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 
 .navigation-item:hover {
-    background-color: #080f5b;
+    background-color: #FEB664; /* Orange */
 }
 
 /*reference: https://www.w3schools.com/css/css_navbar.asp */
