@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>DeluxeDice - Home Page</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/home_page.css" rel="stylesheet">
+
+    <!-- These two lines import the fonts from google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="title">
+        <img width="85" height="90" src="img/logo_edit.png" title="DeluxedDice Logo" alt="A D20 dice that is gold on a transparent background">
+        <h1>Deluxe Dice</h1>
+      </div> <br>
+
+      <!-- This is the navigation for the style sheet -->
+      <ul class="navigation">
+        <li><a class="navigation-item" href="about.html">About</a></li>
+        <li><a class="navigation-item" href="products.html">Products</a><li>
+      </ul>
+    </header>
+
+    <!-- EVENTS -->
+    <!-- Event carousel -->
+    <section id="events">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="img/birthday_banner.jpg" class="slide-images-1" title="DeluxedDice Event" alt="Birthday Event Banner">
+            <img src="img/birthday_banner_small.jpg" class="slide-images-2" title="DeluxedDice Event" alt="Birthday Event Banner">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/starwars_banner.jpg" class="slide-images-1" title="DeluxedDice Event" alt="Starwars Event Banner">
+              <img src="img/starwars_banner_small.jpg" class="slide-images-2" title="DeluxedDice Event" alt="Starwars Event Banner">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/december_banner.jpg" class="slide-images-1" title="DeluxedDice Event" alt="December Event Banner">
+            <img src="img/december_banner_small.jpg" class="slide-images-2" title="DeluxedDice Event" alt="December Event Banner">
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+      </script>
+
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section id="featured-products">
+      <h2 class="home-page-section">Featured Products</h2>
+        <figure class="product">
+          <a href="#"><img class="img-link product-img" src="img/bibbitybopityboo_dice.jpg" title="DND Dice" alt="DND dice that are light blue, pink, and lavender"></a>
+          <figcaption class="product-info">Bibbity Bobity Boo Dice - $15</figcaption>
+        </figure>
+
+        <figure class="product">
+          <a href="#"><img class="img-link product-img" src="img/crazy_daisy_dice.jpg" title="DND Dice" alt="DND dice that are blue with flowers"></a>
+          <figcaption class="product-info">Crazy Daisy Dice - $20</figcaption>
+        </figure>
+
+        <figure class="product">
+          <a href="#"><img class="img-link product-img" src="img/sweet_tooth_dice.jpg" title="DND Dice" alt="DND dice that have sprinkles in them"></a>
+          <figcaption class="product-info">Sweet Tooth Dice - $15</figcaption>
+        </figure>
+    </section>
+
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Atlantahammy. Creator. <strong>DND Dice with Heart [Image]</strong>. Retrieved from <a href="http://www.ourclipart.com/clipart/d20%20clipart/#gal_d20-clipart_4674806.jpg">http://www.ourclipart.com/clipart/d20%20clipart/#gal_d20-clipart_4674806.jpg</a></li>
+        <li>Crystal Maggie. Creator. <strong>Opalite Dice [Image]</strong>. Retrieved from <a href="https://www.etsy.com/listing/637021377/opalite-dice-set-dnd-dice-set-stone-dice">https://www.etsy.com/listing/637021377/opalite-dice-set-dnd-dice-set-stone-dice</a></li>
+        <li>Dark Elf Dice. Creator. <strong>Fey Magic Dice [Image]</strong>. Retrieved from <a href="https://darkelfdice.com/products/blended-dice-fey-magic-rpg-role-playing-game-dice-set">https://darkelfdice.com/products/blended-dice-fey-magic-rpg-role-playing-game-dice-set</a></li>
+        <li>Dice Envy. Creator. <strong>Acid Mist Dice [Image]</strong>. Retrieved from <a href="https://diceenvy.com/products/dnd-dice-set-green-and-gold">https://diceenvy.com/products/dnd-dice-set-green-and-gold</a></li>
+        <li>Heng, Christopher. Developer. 2018. <strong>How to Create a Coloured Box in HTML/CSS [Tutorial]</strong>. Retrieved from <a href="https://www.thesitewizard.com/css/create-coloured-box.shtml">https://www.thesitewizard.com/css/create-coloured-box.shtml</a></li>
+        <li>Lemonad, Jovanny. Designer. <strong> Yeseva One [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Yeseva+One?selection.family=Yeseva+One">https://fonts.google.com/specimen/Yeseva+One?selection.family=Yeseva+One</a></li>
+        <li>Ulanovsky, Julieta. Designer. <strong> Montserrat [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Montserrat">https://fonts.google.com/specimen/Montserrat</a></li>
+        <li>Kraken Dice. Creator. <strong> Purple Black Fusion Dice [Image]</strong>. Retrieved from <a href="https://www.krakendice.com/purple-black-fusion-dice-rpg-polyhedral-dice-set-for-dnd/">https://www.krakendice.com/purple-black-fusion-dice-rpg-polyhedral-dice-set-for-dnd/</a></li>
+        <li>Kraken Dice. Creator. <strong>Rainbow Dice [Image]</strong> Retrieved from <a href="https://www.krakendice.com/lucky-charms-rainbow-dice-set/">https://www.krakendice.com/lucky-charms-rainbow-dice-set/</a></li>
+        <li>Kraken Dice. Creator. <strong>Blue Aurora Translucent Dice [Image]</strong>. Retrieved from <a href="https://www.krakendice.com/lucky-charms-rainbow-dice-set/">https://www.krakendice.com/lucky-charms-rainbow-dice-set/</a></li>
+        <li>Mozilla. <strong>Radio Buttons [Tutorial]</strong>. Retrieved from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio</a></li>
+        <li>RapidTables. <strong>HTML Image as Link [Tutorial]</strong>. Retrieved from <a href="https://www.rapidtables.com/web/html/link/html-image-link.html">https://www.rapidtables.com/web/html/link/html-image-link.html</a></li>
+        <li>Stack Overflow. 2011.<strong>How to Change the Color of Radio Buttons [Tutorial]</strong>. Retrieved from <a href="https://stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons">https://stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons</a></li>
+        <li>Takuma. <strong>Awesome Input Focus Effects [Tutorial]</strong>.Retrieved from <a href="https://codepen.io/Takumari85/pen/RaYwpJ">https://codepen.io/Takumari85/pen/RaYwpJ</a></li>
+        <li>W3Schools. <strong>HTML Tables [Tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/html/html_tables.asp">https://www.w3schools.com/html/html_tables.asp</a></li>
+        <li>W3Schools. <strong>How To - Change Placeholder Color</strong>. Retrieved from <a href="https://www.w3schools.com/howto/howto_css_placeholder.asp">https://www.w3schools.com/howto/howto_css_placeholder.asp</a></li>
+        <li>W3Schools. <strong>How To - Image Hover Overlay [Tutorial]</strong>.Retrieved from <a href="https://www.w3schools.com/howto/howto_css_image_overlay.asp">https://www.w3schools.com/howto/howto_css_image_overlay.asp</a></li>
+        <li>W3Schools. <strong>CSS Navigation Bar [Tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/css/css_navbar.asp">https://www.w3schools.com/css/css_navbar.asp</a></li>
+        <li>W3Schools. <strong>Slideshow / Carousel [Tutorial]</strong>. Retrieved from <a href="https://www.w3schools.com/howto/howto_js_slideshow.asp">https://www.w3schools.com/howto/howto_js_slideshow.asp</a></li>
+        <li>Your Dices. Creator. <strong> Gold DnD Dice [Image]</strong>. Retrieved from <a href="https://www.yourdices.com/product/gold-dnd-dice-set/">https://www.yourdices.com/product/gold-dnd-dice-set/</a></li>
+      </ul>
+
+    </section>
+
+  </body>
+
+  <footer>
+      <p>Email: questions@deluxedice.com <br>
+        Facebook: www.facebook.com/DeluxeDice <br>
+        Instagram: www.instagram.com/DeluxeDice (@DeluxeDice) <br>
+        Twitter: www.twitter.com/DeluxeDice <br>
+      </p>
+  </footer>
+</html>

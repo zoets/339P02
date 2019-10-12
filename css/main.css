@@ -1,13 +1,5 @@
 /* LOGO AND TITLE -------------------------------------
 */
-
-/*
-  Lilac: #CCB2D5
-  Purple: #86538C
-  Orange: #FEB664
-  Yellow: #F8E392
-  Grey: #7F7F7F
-  */
 header {
   background: #CCB2D5; /* Lilac */
 }
@@ -408,4 +400,10 @@ td {
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+footer {
+  background-color: #86538C; /* Purple */
+  padding: 3em;
+  color: white;
 }
