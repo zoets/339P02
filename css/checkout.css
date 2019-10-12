@@ -18,3 +18,11 @@
 .product-info {
   float: right;
 }
+
+#purchase {
+  text-align: center;
+}
+
+#purchase img {
+  width: 15em;
+}
