@@ -1,0 +1,13 @@
+/* This is the stylesheet for the about page*/
+
+.about-us img {
+  float: right;
+  width: 13em;
+}
+
+/* Shape the paragraph at certain screen sizes */
+@media screen and (min-width: 105em) {
+  p{
+    width: 55%;
+  }
+}
