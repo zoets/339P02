@@ -12,6 +12,12 @@
   text-align: center;
 }
 
+/*third row*/
+.container3 {
+  display: flex;
+  text-align: center;
+}
+
 /*product styling*/
 .product {
   flex: 1 1 auto;
@@ -25,20 +31,51 @@
 /*make the items display vertically on a smaller screen size*/
 @media screen and (min-width: 20em) {
   .container{
-    flex-direction: column
+    flex-direction: column;
   }
 
   .container2 {
     flex-direction: column;
   }
+
+  .container3 {
+    flex-direction: column;
+  }
 }
 
-@media screen and (min-width: 50em) {
+/*make only two items per row display on medium screen sizes*/
+@media screen and (min-width: 40em) {
   .container{
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .container2 {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .container3 {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+
+/*make all four items display on large screen sizes*/
+@media screen and (min-width: 80em) {
+  .container{
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .container2 {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .container3 {
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }

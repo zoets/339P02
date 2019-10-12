@@ -243,6 +243,10 @@ code {
   color: #86538C;  /* Purple */
 }
 
+
+
+
+
 select {
   font: 16px 'Montserrat', sans-serif;
   color:  #FEB664; /* Orange */
@@ -319,6 +323,10 @@ input[type='radio']:after {
 
 /* resource: https://www.w3schools.com/howto/howto_css_image_overlay.asp */
 
+/*image as link*/
+.img-link img {
+  width: 40%;
+}
 
 /*
   TEXT ELEMENTS -------------------
@@ -372,10 +380,12 @@ h1, h2 {
 /* product listing css*/
 .product {
   display: inline-block;
+  width: 40%;
 }
 
 .product-img {
   vertical-align: top;
+  width: 100%;
 }
 
 .product-info {
