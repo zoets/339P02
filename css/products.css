@@ -41,6 +41,11 @@
   .container3 {
     flex-direction: column;
   }
+
+  /*for the product detail page only*/
+    .container4 {
+      flex-direction: column;
+    }
 }
 
 /*make only two items per row display on medium screen sizes*/
@@ -59,7 +64,15 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  /*for the product detail page only*/
+    .container4 {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
 }
+
+
 
 
 /*make all four items display on large screen sizes*/
@@ -78,4 +91,37 @@
     flex-direction: row;
     flex-wrap: nowrap;
   }
+
+/*for the product detail page only*/
+  .container4 {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+/* Styling for the Detailed Product pages */
+.container4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* create space between the product image and product description*/
+.product_description {
+  margin-left: 10em;
+}
+
+#detailed_view {
+  width: 25rem;
+  height: 25rem;
+  float: left;
+
+}
+
+.button-nav {
+  margin-bottom: 2em;
+}
+
+.desc {
+  text-align: left;
 }
