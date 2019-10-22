@@ -45,6 +45,7 @@
   /*for the product detail page only*/
     .container4 {
       flex-direction: column;
+      padding-top: 3em;
     }
 }
 
@@ -69,6 +70,7 @@
     .container4 {
       flex-direction: row;
       flex-wrap: wrap;
+      padding-top: 0;
     }
 }
 
@@ -99,11 +101,26 @@
   }
 }
 
+/*-----------------------------------------------------------------------*/
+
 /* Styling for the Detailed Product pages */
 .container4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 0;
+}
+
+/*style the added to cart message*/
+h3 {
+  text-align: center;
+  color: #3d3d3d; /*Dark Grey*/
+}
+
+.added-message {
+  background-color: #CCB2D5; /* Lilac */
+  margin:auto;
+  width: 60%;
 }
 
 /* create space between the product image and product description*/

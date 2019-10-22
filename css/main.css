@@ -158,12 +158,12 @@ code {
 
 /*in-text link*/
 .in-text-link {
-  color: #CCB2D5; /* Lilac */
+  color: #86538C; /* Purple */
   text-decoration: none;
 }
 
 .in-text-link:hover, .in-text-link:focus, .in-text-link:active {
-  color: #F8E392;  /* Yellow */
+  color: #FEB664; /* Orange */
 }
 
 /*navigation button*/

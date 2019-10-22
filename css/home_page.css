@@ -2,6 +2,35 @@
   text-align: center;
 }
 
+/* flex box css*/
+.flex-box {
+  display: flex;
+  margin: 5em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*make the items display vertically on a smaller screen size*/
+@media screen and (min-width: 20em) {
+  .flex-box{
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+/*make only two items per row display on medium screen sizes*/
+@media screen and (min-width: 40em) {
+  .flex-box{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+}
+
+
+
+/*carousel css*/
+
 .slide-images-1{
   width:100%;
 }
@@ -12,7 +41,7 @@
 }
 
 .product-img {
-  width:40%;
+  width:50%;
 }
 
 .slideshow-container {
