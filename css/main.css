@@ -166,6 +166,15 @@ code {
   color: #FEB664; /* Orange */
 }
 
+.social-media-link {
+  color: #F8E392; /* Yellow */
+  text-decoration: none;
+}
+
+.social-media-link:hover, .social-media-link:focus, .social-media-link:active {
+  color: #CCB2D5; /* Lilac */
+}
+
 /*navigation button*/
 
 .button-nav {
