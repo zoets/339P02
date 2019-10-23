@@ -3,7 +3,7 @@
 
   <head>
 
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deluxe Dice - Home Page</title>
 
     <link href="css/main.css" rel="stylesheet">
@@ -38,26 +38,30 @@
     <!-- Event carousel -->
     <section id="events">
       <!-- Should auto play the music but it isn't... -->
-      <audio controls autoplay loop>
-        <source src="Megalovania.mp3" type="audio/mpeg">
+      <audio audio autoplay="autoplay" controls="controls">
+        <source src="Megalovania.mp3">
+          <source src="Megalovania.ogg">
         <p>Your browser does not support the audio element.</p>
       </audio>
 
-
+        <!-- All of the event banners and their size variations -->
         <div class="slideshow-container">
           <div class="mySlides fade">
             <img src="img/birthday_banner.jpg" class="slide-images-1" title="DeluxedDice Event" alt="Birthday Event Banner">
             <img src="img/birthday_banner_small.jpg" class="slide-images-2" title="DeluxedDice Event" alt="Birthday Event Banner">
+            <img src="img/birthday_banner_mobile.jpg" class="slide-images-3" title="DeluxedDice Event" alt="Birthday Event Banner">
           </div>
 
           <div class="mySlides fade">
             <img src="img/starwars_banner.jpg" class="slide-images-1" title="DeluxedDice Event" alt="Starwars Event Banner">
-              <img src="img/starwars_banner_small.jpg" class="slide-images-2" title="DeluxedDice Event" alt="Starwars Event Banner">
+            <img src="img/starwars_banner_small.jpg" class="slide-images-2" title="DeluxedDice Event" alt="Starwars Event Banner">
+            <img src="img/starwars_banner_mobile.jpg" class="slide-images-3" title="DeluxedDice Event" alt="Starwars Event Banner">
           </div>
 
           <div class="mySlides fade">
             <img src="img/december_banner.jpg" class="slide-images-1" title="DeluxedDice Event" alt="December Event Banner">
             <img src="img/december_banner_small.jpg" class="slide-images-2" title="DeluxedDice Event" alt="December Event Banner">
+            <img src="img/december_banner_mobile.jpg" class="slide-images-3" title="DeluxedDice Event" alt="December Event Banner">
           </div>
 
           <!-- Next and previous buttons -->
@@ -136,19 +140,19 @@
       </div>
 
       <div class="flex-item">
-        <img class="social-media" src="img/icons/email_orange_white.png" alt="An email icon"><a class="in-text-link" href="mailto:questions@deluxedice.com">Email</a>
+        <img class="social-media" src="img/icons/email_orange_white.png" alt="An email icon"><a class="social-media-link" href="mailto:questions@deluxedice.com">Email</a>
       </div>
 
       <div class="flex-item">
-          <img class="social-media" src="img/icons/facebook_orange_white.png" alt="The Facebook logo"><a class="in-text-link" href="https://www.facebook.com">Facebook</a>
+          <img class="social-media" src="img/icons/facebook_orange_white.png" alt="The Facebook logo"><a class="social-media-link" href="https://www.facebook.com">Facebook</a>
       </div>
 
       <div class="flex-item">
-          <img class="social-media" src="img/icons/insta_orange_white.png" alt="The Instagram logo"><a class="in-text-link" href="https://www.instagram.com">Instagram</a>
+          <img class="social-media" src="img/icons/insta_orange_white.png" alt="The Instagram logo"><a class="social-media-link" href="https://www.instagram.com">Instagram</a>
       </div>
 
       <div class="flex-item">
-          <img class="social-media" src="img/icons/twitter_orange_white.png" alt="The Twitter Logo"><a class="in-text-link" href="https://www.twitter.com">Twitter</a>
+          <img class="social-media" src="img/icons/twitter_orange_white.png" alt="The Twitter Logo"><a class="social-media-link" href="https://www.twitter.com">Twitter</a>
       </div>
 
       <div class="flex-item">
