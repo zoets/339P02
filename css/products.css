@@ -47,6 +47,10 @@
       flex-direction: column;
       padding-top: 3em;
     }
+
+    .product_description {
+      margin-left: 0;
+    }
 }
 
 /*make only two items per row display on medium screen sizes*/
@@ -72,6 +76,7 @@
       flex-wrap: wrap;
       padding-top: 0;
     }
+
 }
 
 
@@ -121,6 +126,16 @@ h3 {
   background-color: #CCB2D5; /* Lilac */
   margin:auto;
   width: 60%;
+}
+
+/*the added message in-text link is special*/
+.added-link {
+  color: #86538C; /* Purple */
+  text-decoration: none;
+}
+
+.added-link:hover, .added-link:focus, .added-link:active {
+  color: #F8E392; /* Yellow */
 }
 
 /* create space between the product image and product description*/
