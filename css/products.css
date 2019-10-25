@@ -4,18 +4,24 @@
 .container {
   display: flex;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 /*second row*/
 .container2 {
   display: flex;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 /*third row*/
 .container3 {
   display: flex;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 /*product styling*/
@@ -24,8 +30,8 @@
 }
 
 .product-img {
-  width: 15rem;
-  height: 15rem;
+  width: 50%;
+  height: 50%;
 }
 
 /*make the items display vertically on a smaller screen size*/
@@ -51,6 +57,21 @@
     .product_description {
       margin-left: 0;
     }
+
+    .product_description {
+      padding-right: 10em;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .description {
+      margin-left: 2em;
+    }
+
+    .desc {
+      text-align: center;
+    }
 }
 
 /*make only two items per row display on medium screen sizes*/
@@ -75,6 +96,26 @@
       flex-direction: row;
       flex-wrap: wrap;
       padding-top: 0;
+    }
+
+    .product-img {
+      width: 50%;
+      height: 50%;
+    }
+
+    .product_description {
+      padding-right: 10em;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .description {
+      margin-left: 3em;
+    }
+
+    .desc {
+      text-align: center;
     }
 
 }
@@ -152,8 +193,4 @@ h3 {
 
 .button-nav {
   margin-bottom: 2em;
-}
-
-.desc {
-  text-align: left;
 }

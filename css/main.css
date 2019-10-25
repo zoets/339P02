@@ -402,6 +402,12 @@ h1, h2 {
   padding-top: 1em;
 }
 
+.flex-box {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 /*payment form*/
 
 /* shopping cart css */
@@ -455,6 +461,11 @@ footer {
   .flex-item {
     padding-bottom: 1em;
   }
+
+  .product {
+    display: inline-block;
+    width: 75%;
+  }
 }
 
 @media screen and (min-width: 40em) {
@@ -463,5 +474,10 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+  }
+
+  .product {
+    display: inline-block;
+    width: 40%;
   }
 }
