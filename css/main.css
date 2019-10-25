@@ -158,12 +158,12 @@ code {
 
 /*in-text link*/
 .in-text-link {
-  color: #86538C; /* Purple */
+  color: #CCB2D5; /* Lilac */
   text-decoration: none;
 }
 
 .in-text-link:hover, .in-text-link:focus, .in-text-link:active {
-  color: #FEB664; /* Orange */
+  color: #F8E392; /* Yellow */
 }
 
 .social-media-link {
@@ -461,5 +461,7 @@ footer {
 
   footer {
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 }
