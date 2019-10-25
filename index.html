@@ -1,11 +1,16 @@
+<!--/////////////////////////// HOME PAGE ///////////////////////////////////-->
 <!DOCTYPE html>
 <html lang="en">
 
   <head>
 
+    <!-- charset used for character encoding -->
+    <!-- name, content, and initial-scale used for mobile view -->
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Deluxe Dice - Home Page</title>
 
+    <!-- Style sheet links -->
     <link href="css/main.css" rel="stylesheet">
     <link href="css/home_page.css" rel="stylesheet">
 
@@ -23,7 +28,7 @@
         <h1>Deluxe Dice</h1>
       </div> <br>
 
-      <!-- This is the navigation for the style sheet -->
+      <!-- This is the navigation -->
       <ul class="navigation">
         <ul class="navigation">
           <li><a class="navigation-item" href="index.html">Home</a></li>
@@ -34,84 +39,76 @@
       </ul>
     </header>
 
-    <!-- EVENTS -->
+    <!-- EVENTS SECTION -->
+
     <!-- Event carousel -->
-    <section id="events">
-      <!-- Should auto play the music but it isn't... -->
-      <audio audio autoplay="autoplay" controls="controls">
-        <source src="Megalovania.mp3">
-          <source src="Megalovania.ogg">
-        <p>Your browser does not support the audio element.</p>
-      </audio>
-
-        <!-- All of the event banners and their size variations -->
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <img src="img/birthday_banner.jpg" class="slide-images-1" title="DeluxedDice Event" alt="Birthday Event Banner">
-            <img src="img/birthday_banner_small.jpg" class="slide-images-2" title="DeluxedDice Event" alt="Birthday Event Banner">
-            <img src="img/birthday_banner_mobile.jpg" class="slide-images-3" title="DeluxedDice Event" alt="Birthday Event Banner">
-          </div>
-
-          <div class="mySlides fade">
-            <img src="img/starwars_banner.jpg" class="slide-images-1" title="DeluxedDice Event" alt="Starwars Event Banner">
-            <img src="img/starwars_banner_small.jpg" class="slide-images-2" title="DeluxedDice Event" alt="Starwars Event Banner">
-            <img src="img/starwars_banner_mobile.jpg" class="slide-images-3" title="DeluxedDice Event" alt="Starwars Event Banner">
-          </div>
-
-          <div class="mySlides fade">
-            <img src="img/december_banner.jpg" class="slide-images-1" title="DeluxedDice Event" alt="December Event Banner">
-            <img src="img/december_banner_small.jpg" class="slide-images-2" title="DeluxedDice Event" alt="December Event Banner">
-            <img src="img/december_banner_mobile.jpg" class="slide-images-3" title="DeluxedDice Event" alt="December Event Banner">
-          </div>
-
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br>
-
-      <!-- The dots -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+    <!-- All of the event banners and their size variations -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="img/birthday_banner.jpg" class="slide-images-1" title="DeluxedDice Event" alt="Birthday Event Banner">
+        <img src="img/birthday_banner_small.jpg" class="slide-images-2" title="DeluxedDice Event" alt="Birthday Event Banner">
+        <img src="img/birthday_banner_mobile.jpg" class="slide-images-3" title="DeluxedDice Event" alt="Birthday Event Banner">
       </div>
 
-      <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
+      <div class="mySlides fade">
+        <img src="img/starwars_banner.jpg" class="slide-images-1" title="DeluxedDice Event" alt="Starwars Event Banner">
+        <img src="img/starwars_banner_small.jpg" class="slide-images-2" title="DeluxedDice Event" alt="Starwars Event Banner">
+        <img src="img/starwars_banner_mobile.jpg" class="slide-images-3" title="DeluxedDice Event" alt="Starwars Event Banner">
+      </div>
 
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
+      <div class="mySlides fade">
+        <img src="img/december_banner.jpg" class="slide-images-1" title="DeluxedDice Event" alt="December Event Banner">
+        <img src="img/december_banner_small.jpg" class="slide-images-2" title="DeluxedDice Event" alt="December Event Banner">
+        <img src="img/december_banner_mobile.jpg" class="slide-images-3" title="DeluxedDice Event" alt="December Event Banner">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
         }
-
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
         }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
 
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " active";
-        }
-      </script>
-
-    </section>
-
-    <!-- FEATURED PRODUCTS -->
-    <section id="featured-products">
+    <!-- FEATURED PRODUCTS SECTION -->
       <h2 class="home-page-section">Featured Products</h2>
+
       <div class="flex-box">
+
         <figure class="product">
           <a href="product_detailed2.html"><img class="img-link product-img" src="img/bibbitybopityboo_dice.jpg" title="DND Dice" alt="DND dice that are light blue, pink, and lavender"></a>
           <figcaption class="product-info">Bippity Boppity Boo Dice - $15</figcaption>
@@ -131,10 +128,11 @@
           <a href="product_detailed.html"><img class="img-link product-img" src="img/vaporwave_dice.jpg" title="DND Dice" alt="DND dice that are blue and semi-transparent with purple strands inside that look like smoke."></a>
           <figcaption class="product-info">Vaporwave Dice - $15</figcaption>
         </figure>
+
       </div>
-    </section>
 
     <footer>
+
       <div>
         <p id="copyright">&copy; Deluxe Dice 2019</p>
       </div>
@@ -166,6 +164,7 @@
       <div class="flex-item">
         <a class="navigation-item" href="https://github.com/zoets/339P02">GitHub</a>
       </div>
+
     </footer>
 
   </body>

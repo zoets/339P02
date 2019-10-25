@@ -1,13 +1,38 @@
 /* This is the stylesheet for the about page*/
+.about-us {
+  padding-top: 4em;
+}
 
 .about-us img {
-  float: right;
-  width: 13em;
+  float: left;
+  max-width: 30%;
+  margin: 2em;
+  margin-top: 0;
+}
+
+p {
+  display: flex;
+  width: 100%;
 }
 
 /* Shape the paragraph at certain screen sizes */
-@media screen and (min-width: 105em) {
+@media screen and (min-width: 40em) {
   p{
-    width: 55%;
+    width: 75%;
+  }
+
+  .about-us img {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  p{
+    margin-top: 2em;
+    width: 50%;
+  }
+
+  .about-us img {
+    width: 15%;
   }
 }
