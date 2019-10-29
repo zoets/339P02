@@ -21,6 +21,10 @@ header {
   color: #86538C; /* Purple */
 }
 
+.title a {
+  text-decoration: none;
+}
+
 /*------------------------ DEFAULT STYLING FOR PAGE --------------------------*/
 
 body {
