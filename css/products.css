@@ -1,5 +1,9 @@
 /* This css sheet is to apply flexbox and other styling to the product listing page */
 
+.products {
+  padding: 1.5em;
+}
+
 /*first row*/
 .container {
   display: flex;
