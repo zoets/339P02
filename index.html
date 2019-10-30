@@ -1,4 +1,5 @@
 <!--/////////////////////////// HOME PAGE ///////////////////////////////////-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,7 +41,7 @@
       </ul>
     </header>
 
-    <!-- EVENTS SECTION -->
+    <!--                           EVENTS SECTION                            -->
 
     <!-- Event carousel -->
     <!-- All of the event banners and their size variations -->
@@ -63,32 +64,14 @@
         <img src="img/december_banner_mobile.jpg" class="slide-images-3" title="DeluxedDice Event" alt="December Event Banner">
       </div>
 
-    <!-- The dots -->
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
+      <!-- JavaScript link -->
+      <script type="text/javascript" src="js/myscript.js"></script>
 
-    <script>
-      var slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        slides[slideIndex-1].style.display = "block";
-        setTimeout(showSlides, 5000); // Change image every 5 seconds
-      }
-    </script>
+  </div>
 
 
-    <!-- FEATURED PRODUCTS SECTION -->
+    <!--                  FEATURED PRODUCTS SECTION                          -->
+    
       <h2 class="home-page-section">Featured Products</h2>
 
       <div class="flex-box">
