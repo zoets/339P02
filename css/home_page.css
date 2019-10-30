@@ -1,6 +1,16 @@
 /* ---------------------- STYING FOR THE HOME PAGE ---------------------------*/
+
 #featured-products {
   text-align: center;
+}
+
+.product-img {
+  width:50%;
+}
+
+/* Removing the space between the banner and nav bar */
+.navigation {
+  margin-bottom: 0;
 }
 
 /* Flex box CSS*/
@@ -29,10 +39,15 @@
 
 
 /* Carousel CSS */
+.slideshow-container {
+  max-width: 100%;
+}
+
 .slide-images-1{
   width:100%;
 }
 
+/* Setting the initial display of smaller banner to be invisible */
 .slide-images-2{
   width:100%;
   display:none;
@@ -43,65 +58,7 @@
   display:none;
 }
 
-.product-img {
-  width:50%;
-}
-
-.slideshow-container {
-  max-width: 100%;
-  /* Keeps arrows in the middle of banners */
-  position: relative;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  /* Change cursor over the hover */
-  cursor: pointer;
-  /* Keeps the arrows in the same place */
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -2em;
-  padding: 16px;
-  color: white;
-  background-color: #CCB2D5; /* Lilac */
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  /* Rounds inner corners on the left button */
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  /* Rounds inner corners on the right button */
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a purple background color */
-.prev:hover, .next:hover {
-  background-color: #86538C;  /* Purple */
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #CCB2D5; /* Lilac */
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #F8E392;  /* Yellow */
-}
-
-/* Fading animation */
+/* Fading Animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
