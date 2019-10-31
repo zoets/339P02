@@ -357,7 +357,7 @@ h1, h2 {
   list-style-type: none;
   overflow: hidden;
   padding: 0;
-
+  margin: 0;
 }
 
 .navigation li {
@@ -431,7 +431,6 @@ footer {
   text-align: center;
   align-items: center;
   justify-content: center;
-
 }
 
 .social-media-container {
@@ -444,6 +443,8 @@ footer {
 
 #copyright {
   width: 100%;
+  padding: 0;
+  height: 1em;
 }
 
 .social-media {
@@ -469,7 +470,7 @@ footer {
   text-align: center;
   text-decoration: none;
   background-color: #CCB2D5; /* Lilac */
-  color: white;
+  color: black;
   transition-property: background-color;
   transition-duration: 0.5s;
   max-width: 6em;
@@ -485,10 +486,15 @@ footer {
 @media screen and (min-width: 20em) {
   footer {
     flex-direction: column;
+    flex-wrap: nowrap;
   }
 
   .flex-item {
     padding-bottom: 1em;
+  }
+
+  #copyright {
+    height: 1em;
   }
 
   .product {
@@ -503,6 +509,11 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  #copyright {
+    height: 1em;
   }
 
   .social-media-container{
